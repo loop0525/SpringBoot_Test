@@ -1,5 +1,6 @@
 package com.loop.mybatisplus_demo;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.loop.mybatisplus_demo.mapper.UserMapper;
 import com.loop.mybatisplus_demo.pojo.User;
@@ -104,6 +105,19 @@ class MybatisplusDemoApplicationTests {
     public void testLogicSelect(){
         userMapper.selectById(6L);
     }
+    // 条件构造器
+    @Test
+    public void test(){
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        wrapper.isNotNull("name").ge("age",25); //姓名不为空，年龄大于等于12
+        userMapper.selectList(wrapper).forEach(System.out::println);
+    }
+    //代码自动生成器
+    @Test
+    public void testGenerator(){
+        NewAutoGenerator.Generation("springboot_test","user2");
+    }
+
 }
 
 
