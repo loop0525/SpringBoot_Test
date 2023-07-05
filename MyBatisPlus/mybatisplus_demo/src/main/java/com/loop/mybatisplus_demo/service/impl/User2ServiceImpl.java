@@ -1,7 +1,7 @@
 package com.loop.mybatisplus_demo.service.impl;
 
-import com.loop.mybatisplus_demo.entity.User2;
-import com.loop.mybatisplus_demo.dao.User2Mapper;
+import com.loop.mybatisplus_demo.pojo.User2;
+import com.loop.mybatisplus_demo.mapper.User2Mapper;
 import com.loop.mybatisplus_demo.service.User2Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;

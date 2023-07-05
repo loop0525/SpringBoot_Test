@@ -23,10 +23,10 @@ public class NewAutoGenerator {
                             .outputDir(System.getProperty("user.dir")+"/src/main/java");
                 })
                 .packageConfig(builder -> {
-                    builder.entity("entity")//实体类包名
+                    builder.entity("pojo")//实体类包名
                             .parent("com.loop.mybatisplus_demo")//父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
                             .controller("controller")//控制层包名
-                            .mapper("dao")//mapper层包名
+                            .mapper("mapper")//mapper层包名
                             //.other("dto")//生成dto目录 可不用
                             .service("service")//service层包名
                             .serviceImpl("service.impl")//service实现类包名

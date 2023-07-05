@@ -115,6 +115,7 @@ class MybatisplusDemoApplicationTests {
     //代码自动生成器
     @Test
     public void testGenerator(){
+
         NewAutoGenerator.Generation("springboot_test","user2");
     }
 

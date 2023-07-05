@@ -1,6 +1,6 @@
 package com.loop.mybatisplus_demo.service;
 
-import com.loop.mybatisplus_demo.entity.User2;
+import com.loop.mybatisplus_demo.pojo.User2;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot_Exercise.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot_Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/整合Redis/compose_redis/compose_redis.iml" filepath="$PROJECT_DIR$/整合Redis/compose_redis/compose_redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis/demo_MyBatis/demo_MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/demo_MyBatis/demo_MyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/单元测试/junit_test/junit_test.iml" filepath="$PROJECT_DIR$/单元测试/junit_test/junit_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisPlus/mybatisplus_demo/mybatisplus_demo.iml" filepath="$PROJECT_DIR$/MyBatisPlus/mybatisplus_demo/mybatisplus_demo.iml" />
+    </modules>
+  </component>
+</project>

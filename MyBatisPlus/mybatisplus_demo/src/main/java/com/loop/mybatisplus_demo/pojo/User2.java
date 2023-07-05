@@ -1,9 +1,8 @@
-package com.loop.mybatisplus_demo.entity;
+package com.loop.mybatisplus_demo.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -43,26 +42,6 @@ public class User2 implements Serializable {
      * 邮箱
      */
     private String email;
-
-    /**
-     * 创建时间
-     */
-    private LocalDateTime createTime;
-
-    /**
-     * 更新时间
-     */
-    private LocalDateTime updateTime;
-
-    /**
-     * 乐观锁
-     */
-    private Integer version;
-
-    /**
-     * 逻辑删除
-     */
-    private Integer deleted;
 
 
 }

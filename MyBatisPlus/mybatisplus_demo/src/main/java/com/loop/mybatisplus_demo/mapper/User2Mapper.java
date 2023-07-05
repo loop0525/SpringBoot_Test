@@ -1,6 +1,6 @@
-package com.loop.mybatisplus_demo.dao;
+package com.loop.mybatisplus_demo.mapper;
 
-import com.loop.mybatisplus_demo.entity.User2;
+import com.loop.mybatisplus_demo.pojo.User2;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
