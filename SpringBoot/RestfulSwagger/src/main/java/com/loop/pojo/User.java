@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 /**
@@ -19,10 +20,11 @@ import lombok.experimental.Accessors;
  */
 @Getter
 @Setter
-@Accessors(chain = true)
+@Accessors(chain = true) //开启链式编程   user.setName("aaa").setAge(18)
+@ToString
 public class User implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L; //表明实现序列化类的不同版本间的兼容性
 
     /**
      * 主键ID
