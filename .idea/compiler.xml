@@ -7,10 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="compose_redis" />
-        <module name="junit_test" />
         <module name="mybatisplus_demo" />
-        <module name="demo_MyBatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
