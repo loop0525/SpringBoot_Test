@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JWT_demo/JWT_demo.iml" filepath="$PROJECT_DIR$/JWT_demo/JWT_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/RestfulSwagger/RestfulSwagger.iml" filepath="$PROJECT_DIR$/RestfulSwagger/RestfulSwagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisplus_demo/mybatisplus_demo.iml" filepath="$PROJECT_DIR$/mybatisplus_demo/mybatisplus_demo.iml" />

@@ -9,15 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="RestfulSwagger" />
         <module name="mybatisplus_demo" />
+        <module name="JWT_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="JWT_demo" target="1.8" />
       <module name="mybatisplus_demo" target="1.8" />
       <module name="RestfulSwagger" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JWT_demo" options="-parameters" />
       <module name="RestfulSwagger" options="-parameters" />
       <module name="mybatisplus_demo" options="-parameters" />
     </option>

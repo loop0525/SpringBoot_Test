@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/mybatisplus_demo/pom.xml" />
         <option value="$PROJECT_DIR$/RestfulSwagger/pom.xml" />
+        <option value="$PROJECT_DIR$/JWT_demo/pom.xml" />
       </list>
     </option>
   </component>

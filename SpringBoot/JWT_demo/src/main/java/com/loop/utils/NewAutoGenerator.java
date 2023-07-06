@@ -1,9 +1,11 @@
-package com.loop;
+package com.loop.utils;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import com.baomidou.mybatisplus.generator.fill.Column;
 
 import java.util.Collections;
 
@@ -21,6 +23,7 @@ public class NewAutoGenerator {
                             //.enableSwagger()
                             //指定输出目录
                             .outputDir(System.getProperty("user.dir")+"/src/main/java")
+                            .fileOverride() //重生覆盖
                             .disableOpenDir();//关闭打开路径
                 })
                 .packageConfig(builder -> {
@@ -39,6 +42,10 @@ public class NewAutoGenerator {
                     builder.addInclude(tableName)
                             //.addTablePrefix("sys_")//设置表前缀过滤
                             .entityBuilder()
+                            .versionColumnName("version") // 基于数据库字段 乐观锁
+                            .logicDeleteColumnName("deleted") // 基于数据库字段 逻辑删除
+                            .addTableFills(new Column("create_time", FieldFill.INSERT))    //基于数据库字段填充
+                            .addTableFills(new Column("update_time", FieldFill.INSERT_UPDATE))
                             .enableLombok()
                             .enableChainModel()
                             .naming(NamingStrategy.underline_to_camel)//数据表映射实体命名策略：默认下划线转驼峰underline_to_camel

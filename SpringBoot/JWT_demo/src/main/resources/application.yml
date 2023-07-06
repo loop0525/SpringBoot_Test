@@ -4,10 +4,10 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 1234
-#  解决springboot 2.6.x后与swagger版本冲突问题
+  #  解决springboot 2.6.x后与swagger版本冲突问题
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
 mybatis-plus:
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 打印日志
