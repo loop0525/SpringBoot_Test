@@ -8,6 +8,8 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * <p>
  *  前端控制器
@@ -29,12 +31,12 @@ public class UserController {
         User user = userMapper.selectById(1L);
         return user.toString();
     }
-    @ApiOperation("测试读取一条记录返回json！")
+    @ApiOperation("测试读取所有记录返回json！")
     @ResponseBody //自动返回json数据
     @GetMapping("/2")
-    public User test2(){
-        User user = userMapper.selectById(1L);
-        return user;
+    public List<User> test2(){
+        List<User> users = userMapper.selectList(null);
+        return users;
     }
 }
 
