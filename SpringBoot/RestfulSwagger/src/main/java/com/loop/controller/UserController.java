@@ -25,13 +25,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @Autowired
     UserMapper userMapper;
-
-    @ApiOperation("测试删除一条记录！")
+    @ApiOperation("测试读取一条记录！")
     @GetMapping
-    public String test(){
+    public String test1(){
         User user = userMapper.selectById(1L);
         return user.toString();
     }
-
 }
 
